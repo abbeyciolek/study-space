@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/dummy_image_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        android:contentDescription="image_header"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:tools="http://schemas.android.com/tools"
+                 android:id="@+id/container"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 tools:context="edu.umich.imlc.studyspace.ui.StudyLocationDetail.StudyLocationDetailActivity"
+                 tools:ignore="MergeRootFrame"/>
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:elevation="6dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@id/dummy_image_header"/>
+
+</RelativeLayout>

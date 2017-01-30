@@ -1,0 +1,31 @@
+<edu.umich.imlc.studyspace.ui.view.MultiSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/load_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Loading Locations.\nPlease Wait..."/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/study_location_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false"/>
+
+    </ViewSwitcher>
+
+</edu.umich.imlc.studyspace.ui.view.MultiSwipeRefreshLayout>

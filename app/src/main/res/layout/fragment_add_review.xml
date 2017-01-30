@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewSwitcher
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_material_light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="?actionBarSize"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/rating_content_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/quietness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:text="Quietness"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_default_material_light"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RatingBar
+                        android:id="@+id/quietness_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ratingBarTouch"
+                        android:stepSize="1"
+                        android:layout_below="@id/quietness"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:textSize="16sp"
+                        android:text="WiFi"
+                        android:textColor="@color/primary_text_default_material_light"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RatingBar
+                        android:id="@+id/wifi_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ratingBarTouch"
+                        android:stepSize="1"
+                        android:layout_below="@id/wifi"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/outlets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:textSize="16sp"
+                        android:text="Outlets"
+                        android:textColor="@color/primary_text_default_material_light"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RatingBar
+                        android:id="@+id/outlets_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ratingBarTouch"
+                        android:stepSize="1"
+                        android:layout_below="@id/outlets"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/tables"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:text="Tables"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_default_material_light"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RatingBar
+                        android:id="@+id/tables_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ratingBarTouch"
+                        android:stepSize="1"
+                        android:layout_below="@id/tables"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/review_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_content_area"
+                android:hint="Title"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/review_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/review_title"
+                android:padding="10dp"
+                android:hint="Details"
+                android:minLines="3"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+</ViewSwitcher>

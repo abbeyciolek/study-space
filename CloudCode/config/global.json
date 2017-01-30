@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Study Space": {
+            "applicationId": "yGZGMuVvMIf560ckMmF38MWKeaWJV0LkPMCBBBuD", 
+            "masterKey": "2PXCXbRk4rocA5Z0nCLj9DhQ5a2QjZoOjkzSRswC"
+        }, 
+        "_default": {
+            "link": "Study Space"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.5"
+    }
+}

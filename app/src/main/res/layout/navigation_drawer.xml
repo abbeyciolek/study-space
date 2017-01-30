@@ -1,0 +1,112 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.personal.taskmanager2.ui.homescreen.NavigationDrawerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--android:drawableLeft="@drawable/ic_action_view_headline"-->
+        <!--android:text="@string/my_projects_title"-->
+        <TextView
+            android:id="@+id/projects"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+        <!--android:drawableLeft="@drawable/ic_content_archive"-->
+        <!--android:text="@string/archive_title"-->
+        <TextView
+            android:id="@+id/archive"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+        <!--android:drawableLeft="@drawable/ic_content_archive"-->
+        <!--android:text="@string/archive_title"-->
+        <TextView
+            android:id="@+id/trash"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <!--android:drawableLeft="@drawable/ic_content_archive"-->
+        <!--android:text="@string/archive_title"-->
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+
+        <!--android:drawableLeft="@drawable/ic_content_archive"-->
+        <!--android:text="@string/archive_title"-->
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:text="@string/action_settings"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+
+        <!--android:drawableLeft="@drawable/ic_content_archive"-->
+        <!--android:text="@string/archive_title"-->
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:drawablePadding="32dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:background="?selectableItemBackground"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

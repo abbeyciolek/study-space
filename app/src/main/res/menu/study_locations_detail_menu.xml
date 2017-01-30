@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="edu.umich.imlc.studyspace.ui.StudyLocationDetail.StudyLocationDetailFragment">
+
+    <item
+        android:id="@+id/sign_in"
+        android:title="Sign In"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_account"
+        android:title="Create Account"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out"
+        app:showAsAction="never"
+        android:visible="false" />
+
+</menu>

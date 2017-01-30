@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_item"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    >
+
+    <View
+        android:id="@+id/review_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@+id/review_name"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/review_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:text="John Doe"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/review_name"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp">
+
+        <RatingBar
+            android:id="@+id/review_rating"
+            style="@style/ratingBarSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:stepSize=".01"/>
+
+        <TextView
+            android:id="@+id/review_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="@color/secondary_text_default_material_light"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/review_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_title"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:paddingRight="16dp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/review_details"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"/>
+
+    <ImageButton
+        android:id="@+id/vote"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_thumbs"
+        android:background="?selectableItemBackground"
+        android:contentDescription="helpfulness"/>
+
+</RelativeLayout>
